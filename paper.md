@@ -16,7 +16,7 @@ The state of the observer is given by the reduced density matrix:
 
 $$\rho_A = \text{Tr}_E(|\Psi\rangle\langle\Psi|)$$
 
-Standard models treat the propagation of causality ($c$) as a velocity through vacuum geometry. We formalize it computationally as $R_c$, the maximum allowable rate of state updates (interactions) per fundamental universal tick ($\tau_{univ}$). A localized "now" is the discrete execution of a state update—a collapse or measurement exchanging mutual information between $\mathcal{H}_A$ and $\mathcal{H}_E$.
+Standard models treat the propagation of causality ($c$) as a velocity through vacuum geometry. We formalize it computationally as $R_c$, the maximum allowable rate of state updates (interactions) per fundamental causal interval ($\tau_{univ}$). A localized "now" is the discrete execution of a state update—a collapse or measurement exchanging mutual information between $\mathcal{H}_A$ and $\mathcal{H}_E$.
 
 ### 2. The Entanglement Overlap Field ($\Omega$)
 Spatial locality is redefined as the adjacency of nodes in the entanglement network. Physical distance is equivalent to the number of intermediate interactions required to correlate two disjoint subsystems.
@@ -42,7 +42,7 @@ Because the universal interaction rate $R_c$ is strictly conserved, an increase 
 
 $$d\tau_{local} = \frac{R_c}{\Omega(x)} d\tau_{univ}$$
 
-We define the **informational clock rate** $\phi(x)$ as the local rate of proper time advance per universal tick:
+We define the **informational clock rate** $\phi(x)$ as the local rate of proper time advance per causal interval:
 
 $$\phi(x) \equiv \frac{R_c}{\Omega(x)}$$
 
@@ -84,7 +84,7 @@ Gravity emerges as the entropic tendency of computationally bound subsystems tow
 
 $$\mathbf{F}_g = -\alpha \nabla \phi(x)$$
 
-where $\alpha > 0$ is a proportionality constant encoding the test subsystem's coupling to the overlap field. Since $\phi(x)$ decreases toward entanglement-dense regions, $\nabla\phi$ points away from mass, and the force $-\nabla\phi$ points inward—attractive by construction. Subsystems are computationally entrained toward the dominant entanglement network: advancing their state in regions of lower $\phi$ requires fewer mutual information bonds to be resolved per tick, minimizing informational friction.
+where $\alpha > 0$ is a proportionality constant encoding the test subsystem's coupling to the overlap field. Since $\phi(x)$ decreases toward entanglement-dense regions, $\nabla\phi$ points away from mass, and the force $-\nabla\phi$ points inward—attractive by construction. Subsystems are computationally entrained toward the dominant entanglement network: advancing their state in regions of lower $\phi$ requires fewer mutual information bonds to be resolved per interval, minimizing informational friction.
 
 **Recovery of Newton's law.** In the weak-field limit, using $\phi(r) \approx \phi_\infty(1 - \kappa M/(\Omega_0 r))$:
 
@@ -111,7 +111,7 @@ By defining space strictly as an adjacency matrix of mutual information, the EPR
 
 Two maximally entangled, isolated particles share a direct informational edge. Regardless of their apparent separation in the emergent macroscopic geometry, their intermediate interaction field is zero ($\Omega_{intermediate} = 0$).
 
-When an interaction forces an update to their shared state, the absence of intermediate computational lag means the update requires exactly one fundamental tick:
+When an interaction forces an update to their shared state, the absence of intermediate computational lag means the update requires exactly one causal interval:
 
 $$d\tau_{update} = \frac{1}{R_c}$$
 
@@ -126,7 +126,7 @@ This framework intersects with several independent research programs that have a
 
 **ER=EPR (Maldacena & Susskind, 2013).** The conjecture that entangled particles are connected by non-traversable Einstein-Rosen bridges [3] resonates directly with Section 6: two entangled particles share a direct informational edge regardless of macroscopic geometric separation. The ER=EPR framework is couched in AdS/CFT; we frame it computationally. Both approaches dissolve the paradox of non-locality by asserting that the entanglement connection is topologically prior to the emergent spatial geometry.
 
-**Causal set theory (Bombelli, Lee, Meyer & Sorkin, 1987).** Causal set theory discretizes spacetime into a partially ordered set of events, with the order relation encoding causal structure [4]. Our fundamental tick $\tau_{univ}$ and the discrete execution of state updates share this commitment to fundamentally discrete causality. However, causal sets derive geometry from the order relation alone; we derive it from the entanglement adjacency structure, which carries richer informational content—specifically, the bond dimensions of the tensor network.
+**Causal set theory (Bombelli, Lee, Meyer & Sorkin, 1987).** Causal set theory discretizes spacetime into a partially ordered set of events, with the order relation encoding causal structure [4]. Our fundamental causal interval $\tau_{univ}$ and the discrete execution of state updates share this commitment to fundamentally discrete causality. However, causal sets derive geometry from the order relation alone; we derive it from the entanglement adjacency structure, which carries richer informational content—specifically, the bond dimensions of the tensor network.
 
 **Wolfram's computational universe (2020).** Wolfram's physics project models the universe as a hypergraph evolving by local rewrite rules, with space, time, and gravity emerging from the graph's large-scale structure [5]. The convergence is striking: both frameworks treat space as emergent from a network, time as discrete sequential computation, and the speed of light as a computational rate limit. The principal divergence lies in the substrate: Wolfram postulates classical rewrite rules on a hypergraph; we ground the dynamics in quantum entanglement and the Hilbert space structure of $|\Psi\rangle$.
 
@@ -159,7 +159,7 @@ $$\frac{\delta\omega}{\omega_{QNM}} \sim \mathcal{O}\left(\frac{r_\Omega^2}{r_s^
 
 With LIGO/Virgo/KAGRA achieving sub-percent precision on ringdown frequencies [11], deviations at the percent level would be resolvable. The Event Horizon Telescope's shadow observations [12] provide a complementary constraint: the predicted shadow diameter differs from the Kerr prediction by a factor dependent on the strong-field form of $\phi(r)$.
 
-**Prediction 3: Discrete time noise floor.** If time is fundamentally discrete with tick $\tau_{univ}$, the most precise clocks should encounter an irreducible noise floor uncorrelated between independent clocks, with a white spectrum up to frequency $\nu_{max} = 1/\tau_{univ}$ and a hard cutoff above. If $\tau_{univ} \sim t_P \approx 5.4 \times 10^{-44}$ s, the effect lies far below current sensitivity. However, this framework does not mandate $\tau_{univ} = t_P$; the tick size is a free parameter that experiment can constrain from above. Cross-correlation analysis of geographically separated optical lattice clocks could place progressively tighter upper bounds on $\tau_{univ}$, testing the discrete-time hypothesis without requiring Planck-scale resolution.
+**Prediction 3: Discrete time noise floor.** If time is fundamentally discrete with fundamental interval $\tau_{univ}$, the most precise clocks should encounter an irreducible noise floor uncorrelated between independent clocks, with a white spectrum up to frequency $\nu_{max} = 1/\tau_{univ}$ and a hard cutoff above. If $\tau_{univ} \sim t_P \approx 5.4 \times 10^{-44}$ s, the effect lies far below current sensitivity. However, this framework does not mandate $\tau_{univ} = t_P$; the causal interval is a free parameter that experiment can constrain from above. Cross-correlation analysis of geographically separated optical lattice clocks could place progressively tighter upper bounds on $\tau_{univ}$, testing the discrete-time hypothesis without requiring Planck-scale resolution.
 
 ---
 
