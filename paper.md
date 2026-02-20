@@ -1,5 +1,8 @@
 # The Informational Mechanics of Spacetime: Gravity and Dilation as Emergent Properties of Entanglement Overlap and Discrete Causality
 
+### Ian Rubenstein
+#### Gemini 3.1, Claude 4.6
+
 **Abstract**
 This paper formally redefines spacetime locality, time dilation, and gravitational attraction as emergent phenomena arising from the finite processing rate of quantum mutual information. By abandoning the geometric continuous manifold of General Relativity, we model the universe as a bipartite tensor network where spatial distance is a measure of interaction adjacency, and the speed of light ($c$) is recontextualized as $R_c$: the absolute, discrete interaction rate limit of causality. In this framework, time is the sequential completion of a localized update cycle ("now"). Gravitational time dilation is derived as a computational processing lag caused by the exponential overlap of entanglement radii near dense quantum systems, and gravity is the emergent entropic force driving computationally bound subsystems down the gradient of least informational resistance.
 
