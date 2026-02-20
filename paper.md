@@ -6,14 +6,14 @@
 
 ### **Abstract**
 
-This paper formally redefines spacetime locality, time dilation, and gravitational attraction as emergent phenomena arising from the finite processing rate of quantum mutual information. By abandoning the geometric continuous manifold of General Relativity, we model the universe as a bipartite tensor network where spatial distance is a measure of interaction adjacency, and the speed of light ($c$) is recontextualized as $R_c$: the absolute, discrete interaction rate limit of causality. In this framework, time is the sequential completion of a localized update cycle ("now"). Gravitational time dilation is derived as a computational processing lag caused by the exponential overlap of entanglement radii near dense quantum systems, and gravity is the emergent entropic force driving computationally bound subsystems down the gradient of least informational resistance.
+This paper formally redefines spacetime locality, time dilation, and gravitational attraction as emergent phenomena arising from the finite processing rate of quantum mutual information. By abandoning the geometric continuous manifold of General Relativity, we model the universe as a bipartite tensor network where spatial distance is a measure of interaction adjacency, and the speed of light ($c$) is recontextualized as $R_c$: the absolute, discrete interaction rate limit of causality. In this framework, time is the sequential completion of a localized update cycle ("now"). Gravitational time dilation emerges naturally: a fixed interaction rate traversing denser entanglement overlap requires more interactions per state update, lengthening the local update cycle. Gravity is the emergent entropic force driving interaction-bound subsystems down the gradient of least informational resistance.
 
 ---
 
-### 1. The Computational Subsystem and Discrete Causality
+### 1. The Observer Subsystem and Discrete Causality
 We begin by defining the universe not as a spatial container, but as a pure, static quantum state $|\Psi\rangle$ in a total Hilbert space $\mathcal{H}_{total}$, governed by the Wheeler-DeWitt equation $\hat{H}|\Psi\rangle = 0$.
 
-To recover local dynamics, we partition the universe into a computationally bound observer subsystem ($A$) and its environment ($E$):
+To recover local dynamics, we partition the universe into an interaction-bound observer subsystem ($A$) and its environment ($E$):
 
 $$\mathcal{H}_{total} = \mathcal{H}_A \otimes \mathcal{H}_E$$
 
@@ -21,29 +21,29 @@ The state of the observer is given by the reduced density matrix:
 
 $$\rho_A = \text{Tr}_E(|\Psi\rangle\langle\Psi|)$$
 
-Standard models treat the propagation of causality ($c$) as a velocity through vacuum geometry. We formalize it computationally as $R_c$, the maximum allowable rate of state updates (interactions) per fundamental causal interval ($\tau_{univ}$). A localized "now" is the discrete execution of a state update—a collapse or measurement exchanging mutual information between $\mathcal{H}_A$ and $\mathcal{H}_E$.
+Standard models treat the propagation of causality ($c$) as a velocity through vacuum geometry. We formalize it as $R_c$, the maximum allowable rate of state updates (interactions) per fundamental causal interval ($\tau_{univ}$). A localized "now" is the discrete execution of a state update—a collapse or measurement exchanging mutual information between $\mathcal{H}_A$ and $\mathcal{H}_E$.
 
 ### 2. The Entanglement Overlap Field ($\Omega$)
 Spatial locality is redefined as the adjacency of nodes in the entanglement network. Physical distance is equivalent to the number of intermediate interactions required to correlate two disjoint subsystems.
 
-We introduce the scalar field $\Omega(x)$, representing the localized density of overlapping entanglement radii at coordinate $x$. This defines the total computational workload—the number of partial quantum interactions a localized subsystem must resolve to complete a single state update.
+We introduce the scalar field $\Omega(x)$, representing the localized density of overlapping entanglement radii at coordinate $x$. This defines the total interaction volume—the number of partial quantum interactions a localized subsystem must resolve to complete a single state update.
 
 A massive body is defined as a system with extreme internal entanglement density. Let $\rho_e(x)$ denote the volumetric entanglement density distribution. This density sources the overlap field, governed by the informational Poisson equation:
 
 $$\nabla^2 \Omega(x) = -4\pi \kappa \rho_e(x)$$
 
-where $\kappa$ is the fundamental informational coupling constant mapping entanglement density to environmental interaction burden. The sign convention ensures that $\Omega$ increases in the vicinity of entanglement-dense regions, consistent with its interpretation as computational workload.
+where $\kappa$ is the fundamental informational coupling constant mapping entanglement density to environmental interaction burden. The sign convention ensures that $\Omega$ increases in the vicinity of entanglement-dense regions, consistent with its interpretation as interaction volume.
 
 For an isolated system of total entanglement content $M$ localized at the origin ( $\rho_e = M\delta^3(\mathbf{x})$ ), the spherically symmetric solution is:
 
 $$\Omega(r) = \Omega_0 + \frac{\kappa M}{r}$$
 
-where $\Omega_0$ is the background computational density of free space—the irreducible interaction workload of the vacuum. The overlap field diverges as $r \to 0$, reflecting unbounded computational congestion at the core of a maximally entangled system.
+where $\Omega_0$ is the background interaction density of free space—the irreducible interaction volume of the vacuum. The overlap field diverges as $r \to 0$, reflecting unbounded interaction density at the core of a maximally entangled system.
 
-### 3. Derivation of Computational Time Dilation
+### 3. Derivation of Informational Time Dilation
 Time ($\tau_{local}$) is not a background dimension; it is the subjective sequence of discrete update cycles experienced by subsystem $A$.
 
-Because the universal interaction rate $R_c$ is strictly conserved, an increase in the required interactions ($\Omega$) stretches the duration of the local compute cycle. The differential of local proper time is the ratio of the fundamental interaction limit to the local interaction workload:
+Because the universal interaction rate $R_c$ is strictly conserved, an increase in the required interactions ($\Omega$) stretches the duration of each local update cycle. The differential of local proper time is the ratio of the fundamental interaction rate to the local interaction volume:
 
 $$d\tau_{local} = \frac{R_c}{\Omega(x)} d\tau_{univ}$$
 
@@ -71,7 +71,7 @@ $$\frac{\kappa}{\Omega_0} = \frac{G}{R_c^2}$$
 
 This constrains the informational coupling constant entirely in terms of known physical constants, eliminating one free parameter from the framework.
 
-As a subsystem approaches a dense entanglement network, $\Omega(x) \to \infty$ and $\phi(x) \to 0$. Gravitational time dilation is thus derived purely as localized computational lag, devoid of geometric spacetime curvature.
+As a subsystem approaches a dense entanglement network, $\Omega(x) \to \infty$ and $\phi(x) \to 0$. Gravitational time dilation is thus a direct consequence of interaction density: at a fixed rate $R_c$, denser overlap means more interactions per update, and each update takes longer. No geometric spacetime curvature is required.
 
 **Strong-field departure.** In the strong-field regime, the frameworks diverge. The Schwarzschild metric predicts a coordinate singularity at $r = r_s$ where $d\tau/dt = 0$. The informational clock rate $\phi(r) = \phi_\infty / (1 + r_\Omega/2r)$ is strictly positive for all $r > 0$, approaching zero only asymptotically as $r \to 0$. This framework therefore predicts no sharp event horizon—only asymptotically increasing time dilation. The observational consequences are discussed in Section 8.
 
@@ -80,16 +80,16 @@ Under this framework, Einstein's mass-energy equivalence transitions from a kine
 
 $$E = M R_c^2$$
 
-Energy represents the absolute maximum computational throughput a subsystem could execute if its complete entanglement structure were unbottlenecked by the environmental overlap field.
+Energy represents the absolute maximum interaction throughput a subsystem could sustain if its complete entanglement structure were unbottlenecked by the environmental overlap field.
 
-### 5. Gravity as the Gradient of Least Computational Action
-A bound quantum system naturally evolves to advance its wave function with maximal computational efficiency. To maintain a state decoupled from a massive local environment requires breaking continuous mutual information bonds, demanding an interaction workload that exceeds $R_c$.
+### 5. Gravity as the Gradient of Least Informational Action
+A bound quantum system naturally evolves to advance its wave function with maximal interaction efficiency. To maintain a state decoupled from a massive local environment requires breaking continuous mutual information bonds, demanding an interaction workload that exceeds $R_c$.
 
-Gravity emerges as the entropic tendency of computationally bound subsystems toward regions of lower informational clock rate. The emergent force is derived from the gradient of $\phi(x)$:
+Gravity emerges as the entropic tendency of interaction-bound subsystems toward regions of lower informational clock rate. The emergent force is derived from the gradient of $\phi(x)$:
 
 $$\mathbf{F}_g = -\alpha \nabla \phi(x)$$
 
-where $\alpha > 0$ is a proportionality constant encoding the test subsystem's coupling to the overlap field. Since $\phi(x)$ decreases toward entanglement-dense regions, $\nabla\phi$ points away from mass, and the force $-\nabla\phi$ points inward—attractive by construction. Subsystems are computationally entrained toward the dominant entanglement network: advancing their state in regions of lower $\phi$ requires fewer mutual information bonds to be resolved per interval, minimizing informational friction.
+where $\alpha > 0$ is a proportionality constant encoding the test subsystem's coupling to the overlap field. Since $\phi(x)$ decreases toward entanglement-dense regions, $\nabla\phi$ points away from mass, and the force $-\nabla\phi$ points inward—attractive by construction. Subsystems are entrained toward the dominant entanglement network: advancing their state in regions of lower $\phi$ requires fewer mutual information bonds to be resolved per interval, minimizing informational friction.
 
 **Recovery of Newton's law.** In the weak-field limit, using $\phi(r) \approx \phi_\infty(1 - \kappa M/(\Omega_0 r))$:
 
@@ -101,7 +101,7 @@ Identifying $\alpha \phi_\infty \kappa / \Omega_0 = G$ for a unit test mass:
 
 $$\mathbf{F}_g = -\frac{GM}{r^2}\hat{r}$$
 
-Newton's inverse-square law is recovered exactly. The gravitational constant is expressed in terms of fundamental computational quantities:
+Newton's inverse-square law is recovered exactly. The gravitational constant is expressed in terms of fundamental informational quantities:
 
 $$G = \frac{\alpha R_c \kappa}{\Omega_0^2}$$
 
@@ -109,14 +109,14 @@ $$G = \frac{\alpha R_c \kappa}{\Omega_0^2}$$
 
 $$|\mathbf{F}_g| = \frac{\alpha R_c \kappa M}{r^2\left(\Omega_0 + \kappa M/r\right)^2}$$
 
-approaches a finite constant $\alpha R_c / (\kappa M)$ as $r \to 0$, rather than diverging. The computational framework naturally regularizes the Newtonian gravitational singularity: the force saturates when the local interaction workload dominates the vacuum background. This provides a resolution to the classical point-mass divergence without requiring spacetime quantization or dimensional regularization.
+approaches a finite constant $\alpha R_c / (\kappa M)$ as $r \to 0$, rather than diverging. The informational framework naturally regularizes the Newtonian gravitational singularity: the force saturates when the local interaction workload dominates the vacuum background. This provides a resolution to the classical point-mass divergence without requiring spacetime quantization or dimensional regularization.
 
 ### 6. Resolution of Spatially Separated Entanglement
 By defining space strictly as an adjacency matrix of mutual information, the EPR paradox and non-locality are trivially resolved.
 
 Two maximally entangled, isolated particles share a direct informational edge. Regardless of their apparent separation in the emergent macroscopic geometry, their intermediate interaction field is zero ($\Omega_{intermediate} = 0$).
 
-When an interaction forces an update to their shared state, the absence of intermediate computational lag means the update requires exactly one causal interval:
+When an interaction forces an update to their shared state, the absence of intermediate interactions means the update requires exactly one causal interval:
 
 $$d\tau_{update} = \frac{1}{R_c}$$
 
@@ -144,7 +144,7 @@ A framework that claims to replace geometric spacetime must generate predictions
 
 **Prediction 1: Entanglement-dependent self-dilation.** In GR, the stress-energy tensor sources curvature and depends on mass-energy content alone, not on the quantum coherence structure of the source. In this framework, $\Omega$ is sourced by entanglement density $\rho_e$, which depends on the internal quantum correlations of a system—not merely its rest mass. A system's own entanglement contributes to its local overlap field, modifying the rate at which its internal processes evolve.
 
-Consider a Bose-Einstein condensate of $N$ atoms in a state of near-maximal entanglement. The condensate's internal entanglement raises its local computational workload:
+Consider a Bose-Einstein condensate of $N$ atoms in a state of near-maximal entanglement. The condensate's internal entanglement raises its local interaction volume:
 
 $$\Omega_{local} = \Omega_{ext} + \frac{\kappa_E S_E}{l_c}$$
 
