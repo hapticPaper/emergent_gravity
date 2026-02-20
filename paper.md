@@ -6,7 +6,7 @@
 
 ### **Abstract**
 
-This paper formally redefines spacetime locality, time dilation, and gravitational attraction as emergent phenomena arising from the finite propagation rate of quantum mutual information. By abandoning the geometric continuous manifold of General Relativity, we model the universe as a bipartite tensor network where spatial distance is a measure of interaction adjacency, and the speed of light ($c$) is recontextualized as $R_c$: the absolute, discrete interaction rate limit of causality. In this framework, time is the sequential completion of a localized update cycle ("now"). Gravitational time dilation emerges naturally: entangled particles continuously cycle through mutually conforming states, and denser entanglement overlap means consecutive interactions propagate slower through the network, lengthening each update cycle at the fixed rate $R_c$. Velocity-dependent time dilation arises from the same mechanism: a moving subsystem expends causal bandwidth traversing the network, reducing the rate of local state updates by the Lorentz factor — recovering special relativity without geometric Minkowski space. Gravity follows from the same structure: a subsystem's degrees of freedom are shared with the local entanglement network in proportion to the overlap. The greater the overlap with a massive body, the more a subsystem's reference frame and vector are defined through that body's — manifesting macroscopically as gravitational attraction.
+This paper formally redefines spacetime locality, time dilation, and gravitational attraction as emergent phenomena arising from the finite propagation rate of quantum mutual information. By abandoning the geometric continuous manifold of General Relativity, we model the universe as a bipartite tensor network where spatial distance is a measure of interaction adjacency, and the speed of light ($c$) is recontextualized as $R_c$: the absolute, discrete interaction rate limit of causality. In this framework, time is the sequential completion of a localized update cycle ("now"). Gravitational time dilation emerges naturally: entangled particles continuously cycle through mutually conforming states, and denser entanglement overlap means consecutive interactions propagate slower through the network, lengthening each update cycle at the fixed rate $R_c$. Velocity-dependent time dilation arises from the same mechanism: a moving subsystem briefly entangles with everything it passes, accumulating shared degrees of freedom that consume causal bandwidth and reduce the rate of local state updates by the Lorentz factor — recovering special relativity from network isotropy alone, without geometric Minkowski space. Gravity follows from the same structure: a subsystem's degrees of freedom are shared with the local entanglement network in proportion to the overlap. The greater the overlap with a massive body, the more a subsystem's reference frame and vector are defined through that body's — manifesting macroscopically as gravitational attraction.
 
 ---
 
@@ -46,7 +46,7 @@ Alternative field equations carry specific physical consequences:
 - **Nonlinear Poisson** ($\nabla^2\Omega + f(\Omega) = -4\pi\kappa\rho_e$ for some $f$): could produce MOND-like modifications at low accelerations while preserving $1/r$ behavior at short range. This remains a viable extension if galactic rotation curves are to be addressed within the framework.
 - **Wave equation** ($\nabla^2\Omega - R_c^{-2}\partial_t^2\Omega = -4\pi\kappa\rho_e$): introduces propagating disturbances in the overlap field at speed $R_c$ — a natural candidate for gravitational waves within this framework. If the overlap field is dynamic rather than static, the wave equation is the minimal causal extension of Poisson.
 
-The static Poisson equation is therefore the minimal choice consistent with known gravitational phenomenology. Whether dynamical extensions (wave equation) or nonlinear corrections arise from the microscopic entanglement dynamics is an open question addressed in Section 10.
+The static Poisson equation is therefore the minimal choice consistent with known gravitational phenomenology. Whether dynamical extensions (wave equation) or nonlinear corrections arise from the microscopic entanglement dynamics is an open question addressed in Section 11.
 
 For an isolated system of total entanglement content $M$ localized at the origin ( $\rho_e = M\delta^3(\mathbf{x})$ ), the spherically symmetric solution is:
 
@@ -87,19 +87,31 @@ This constrains the informational coupling constant entirely in terms of known p
 
 As a subsystem approaches a dense entanglement network, $\Omega(x) \to \infty$ and $\phi(x) \to 0$. Gravitational time dilation is thus a direct consequence of conformance depth: consecutive interactions propagate slower through denser entanglement overlap, and each update cycle takes longer. No geometric spacetime curvature is required.
 
-**Strong-field departure.** In the strong-field regime, the frameworks diverge. The Schwarzschild metric predicts a coordinate singularity at $r = r_s$ where $d\tau/dt = 0$. The informational clock rate $\phi(r) = \phi_\infty / (1 + r_\Omega/2r)$ is strictly positive for all $r > 0$, approaching zero only asymptotically as $r \to 0$. This framework therefore predicts no sharp event horizon—only asymptotically increasing time dilation. The observational consequences are discussed in Section 9.
+**Strong-field departure.** In the strong-field regime, the frameworks diverge. The Schwarzschild metric predicts a coordinate singularity at $r = r_s$ where $d\tau/dt = 0$. The informational clock rate $\phi(r) = \phi_\infty / (1 + r_\Omega/2r)$ is strictly positive for all $r > 0$, approaching zero only asymptotically as $r \to 0$. This framework therefore predicts no sharp event horizon—only asymptotically increasing time dilation. The observational consequences are discussed in Section 10.
 
-**Velocity-dependent time dilation.** The same mechanism accounts for special-relativistic time dilation. A subsystem at rest devotes its full causal bandwidth $R_c$ to propagating through the local conformance network, yielding clock rate $\phi = R_c/\Omega$. A subsystem moving at velocity $v$ through the entanglement network expends part of that bandwidth on spatial displacement — each interaction encountered along the trajectory is an additional exchange that causality must propagate through at rate $R_c$, leaving less bandwidth for the local update cycle. The physical picture is direct: imagine the entanglement network as a field of interactions occurring at rate $R_c$. A stationary subsystem encounters only the local density. A fast-moving subsystem sweeps through the network ahead of it, each encounter consuming causal bandwidth — like running through rain, where each drop to the face is an interaction that must be processed before the next local update can complete.
+### 4. Special-Relativistic Time Dilation
 
-Since spatial displacement and temporal evolution both draw on the same finite bandwidth $R_c$, the available rate for local updates is:
+Gravitational time dilation (Section 3) arises because a stationary subsystem shares degrees of freedom with nearby entanglement-dense regions, increasing the conformance depth its update cycle must propagate through. Velocity-dependent dilation arises from the same mechanism: a moving subsystem accumulates shared degrees of freedom with everything it passes through the network. A moving clock has a vastly different chain of entanglements than a stationary one, and this difference IS the time dilation.
 
-$$R_c^{(local)} = \sqrt{R_c^2 - v^2}$$
+**Thought experiment: four clocks.** Consider a reference laser emitting photons at frequency $\nu_0$, observed by three clocks: one stationary ($B$), one moving at $0.1R_c$ ($C$), and one co-moving with a laser photon at $R_c$ ($D$).
 
-The conformance depth is unchanged, but the bandwidth available to propagate through it is reduced:
+Clock $B$ is stationary. It interacts with little beyond its local environment. Its reference frame is shared with whatever is nearby, and its update cycle processes only the local conformance depth $\Omega$. It observes the laser at frequency $\nu_0$.
 
-$$\phi(v) = \frac{R_c^{(local)}}{\Omega} = \frac{R_c}{\Omega}\sqrt{1 - \frac{v^2}{R_c^2}} = \phi_{rest}\sqrt{1 - \frac{v^2}{R_c^2}}$$
+Clock $C$ moves at $0.1R_c$ through the entanglement network, briefly entangling with everything it passes — like a car overtaking slower traffic, each vehicle briefly in causal contact. As it moves, it becomes part of the causal past of more of the network, and each brief entanglement imparts bits of those systems' reference frames onto the moving clock. These accumulated interactions are additional exchanges that the finite bandwidth $R_c$ must process, increasing the effective conformance burden and slowing the clock's local time relative to $B$. Clock $C$ observes the laser redshifted.
 
-This recovers the Lorentz factor exactly. At $v = R_c$, all interaction bandwidth is consumed by spatial traversal — none remains for local updates, and $\phi \to 0$: time stops. The speed of light is not merely a velocity bound; it is the point at which traversing the entanglement network exhausts the causal bandwidth available for temporal evolution.
+Clock $D$ co-moves with a laser photon at $R_c$, becoming the causal past of everything along its path — the maximum possible rate of entanglement accumulation. All of its interaction bandwidth is consumed by spatial traversal; none remains for local state updates. Its clock rate is zero. Yet $D$ and the co-moving laser photon trace similar chains through the entanglement network — both follow parallel paths, briefly entangling with the same environment in sequence rather than diverging from each other. They share a common reference frame defined by their parallel traversal of the network, even as neither experiences local time. Only the most dominant quantum interactions along their path meaningfully affect either, and those interactions are the same for both.
+
+**Derivation from network isotropy.** The physical mechanism — motion through the network accumulates additional entanglement interactions that consume the finite causal bandwidth $R_c$ — determines that $\phi$ must decrease with velocity. The precise functional form follows from a single structural property of the entanglement network: local isotropy.
+
+A subsystem's total movement through the entanglement network per causal interval has magnitude $R_c$ — this is the definition of the universal rate limit. This movement has a temporal component (processing the local conformance cycle) and a spatial component (processing interactions accumulated from traversal). If the entanglement network is locally isotropic — no spatial direction is preferred — then these independent components combine by the Euclidean norm:
+
+$$v_{temporal}^2 + v_{spatial}^2 = R_c^2$$
+
+The clock rate is set by the temporal component:
+
+$$\phi(v) = \frac{v_{temporal}}{\Omega} = \frac{\sqrt{R_c^2 - v^2}}{\Omega} = \phi_{rest}\sqrt{1 - \frac{v^2}{R_c^2}}$$
+
+This recovers the Lorentz factor exactly. The derivation requires two inputs: (1) the finite causal bandwidth $R_c$, and (2) isotropy of the entanglement network. No geometric Minkowski space is assumed. The Minkowski signature emerges from the physical asymmetry between temporal evolution (remaining bandwidth after spatial traversal) and spatial displacement (bandwidth consumed by accumulated entanglement). At $v = R_c$, all bandwidth is consumed: $\phi \to 0$, time stops. At $v = 0$, all bandwidth serves the local update cycle: $\phi = \phi_{rest}$.
 
 **Combined dilation.** For a subsystem moving at velocity $v$ in a gravitational overlap field $\Omega(r)$:
 
@@ -109,16 +121,16 @@ In the weak-field, low-velocity limit:
 
 $$\phi \approx \phi_\infty\left(1 - \frac{r_s}{2r} - \frac{v^2}{2R_c^2}\right)$$
 
-reproducing the standard weak-field result of General Relativity. Gravitational and velocity-dependent dilation are not separate phenomena requiring distinct explanations — they are both consequences of the finite causal bandwidth $R_c$: mass increases the conformance depth the bandwidth must propagate through; motion diverts the bandwidth into spatial displacement. Both reduce the rate of local state updates.
+reproducing the standard result of General Relativity. Gravitational and velocity-dependent dilation are unified: both are consequences of the finite causal bandwidth $R_c$. Mass increases the conformance depth the bandwidth must propagate through; motion diverts bandwidth into spatial traversal through accumulated entanglement. Both reduce the rate of local state updates by the same fundamental mechanism — the accumulation of shared degrees of freedom, whether from proximity to mass or from passage through the network.
 
-### 4. Mass-Energy as Interaction Capacity
+### 5. Mass-Energy as Interaction Capacity
 Under this framework, Einstein's mass-energy equivalence transitions from a kinematic description to a statement of latent informational capacity. The total energy $E$ of a localized subsystem is its intrinsic entanglement density ($M$) constrained by the square of the universal interaction rate:
 
 $$E = M R_c^2$$
 
 Energy represents the absolute maximum interaction rate a subsystem could sustain if its degrees of freedom were entirely independent of the environmental entanglement network.
 
-### 5. Gravity as Shared Degrees of Freedom
+### 6. Gravity as Shared Degrees of Freedom
 A subsystem's degrees of freedom are shared with the local entanglement network in proportion to the overlap of their entanglement radii. Near a massive body, a subsystem's entanglement overlaps extensively with the mass — and to the extent that degrees of freedom are shared, the subsystem's reference frame and vector are defined through the mass's.
 
 Consider the limiting case: a particle fully absorbed into a Bose-Einstein condensate has zero independent degrees of freedom. Its next spacetime reference frame and vector are the condensate's, completely. This is not a force acting on the particle — the particle's state simply IS the condensate's state.
@@ -151,7 +163,7 @@ $$|\mathbf{F}_g| = \frac{\alpha R_c \kappa M}{r^2\left(\Omega_0 + \kappa M/r\rig
 
 approaches a finite constant $\alpha R_c / (\kappa M)$ as $r \to 0$, rather than diverging. The informational framework naturally regularizes the Newtonian gravitational singularity: the force saturates when the local conformance depth dominates the vacuum background. This provides a resolution to the classical point-mass divergence without requiring spacetime quantization or dimensional regularization.
 
-### 6. Multi-Body Systems
+### 7. Multi-Body Systems
 
 The linearity of the informational Poisson equation ensures that the overlap field generated by multiple massive bodies superposes:
 
@@ -165,7 +177,7 @@ A test subsystem at position $\mathbf{x}$ has its degrees of freedom shared with
 
 **Hierarchical binding.** In a system with well-separated mass scales — a moon orbiting a planet orbiting a star — the overlap field naturally produces hierarchical binding. The moon's degrees of freedom are shared predominantly with the planet (nearest, densest local overlap), while the planet-moon system's combined degrees of freedom are shared predominantly with the star. Each level of the hierarchy emerges from the local dominance of the nearest entanglement source, without requiring separate treatment. The transition between regimes — the Hill sphere in classical mechanics — corresponds to the radius at which the overlap contributions from two bodies are equal: $\kappa M_1/r_1 = \kappa M_2/r_2$.
 
-### 7. Resolution of Spatially Separated Entanglement
+### 8. Resolution of Spatially Separated Entanglement
 By defining space strictly as an adjacency matrix of mutual information, the EPR paradox and non-locality are trivially resolved.
 
 Two maximally entangled, isolated particles share a direct informational edge. Regardless of their apparent separation in the emergent macroscopic geometry, their intermediate interaction field is zero ($\Omega_{intermediate} = 0$).
@@ -176,14 +188,14 @@ $$d\tau_{update} = \frac{1}{R_c}$$
 
 No causal speed limit is violated; the particles execute a single adjacent interaction, exposing geometric distance as an emergent property of the macroscopic observer's own entanglement structure.
 
-### 8. Correspondence with Existing Frameworks
+### 9. Correspondence with Existing Frameworks
 This framework intersects with several independent research programs that have approached the geometry-information interface from distinct starting points.
 
 **Jacobson's thermodynamic gravity (1995).** Jacobson derived the Einstein field equations by treating the Clausius relation $\delta Q = TdS$ as fundamental, applied to local Rindler horizons with entropy proportional to area [1]. Our framework shares the premise that gravity is not a fundamental force but an emergent consequence of information-theoretic constraints. The key distinction: Jacobson requires the Bekenstein-Hawking entropy-area relation as input; we derive the gravitational gradient directly from the interaction structure of the overlap field, without invoking thermodynamic entropy.
 
-**Verlinde's entropic gravity (2011).** Verlinde proposed gravity as an entropic force arising from changes in information associated with the positions of material bodies, deriving Newton's law from holographic screen arguments [2]. Our Section 5 arrives at a structurally similar result—gravity emerging from informational structure—but replaces the holographic screen with the overlap field $\Omega(x)$ and identifies a microscopic mechanism (shared degrees of freedom through entanglement overlap) rather than a thermodynamic postulate.
+**Verlinde's entropic gravity (2011).** Verlinde proposed gravity as an entropic force arising from changes in information associated with the positions of material bodies, deriving Newton's law from holographic screen arguments [2]. Our Section 6 arrives at a structurally similar result—gravity emerging from informational structure—but replaces the holographic screen with the overlap field $\Omega(x)$ and identifies a microscopic mechanism (shared degrees of freedom through entanglement overlap) rather than a thermodynamic postulate.
 
-**ER=EPR (Maldacena & Susskind, 2013).** The conjecture that entangled particles are connected by non-traversable Einstein-Rosen bridges [3] resonates directly with Section 7: two entangled particles share a direct informational edge regardless of macroscopic geometric separation. The ER=EPR framework is couched in AdS/CFT; we arrive at the same conclusion from the entanglement adjacency structure. Both approaches dissolve the paradox of non-locality by asserting that the entanglement connection is topologically prior to the emergent spatial geometry.
+**ER=EPR (Maldacena & Susskind, 2013).** The conjecture that entangled particles are connected by non-traversable Einstein-Rosen bridges [3] resonates directly with Section 8: two entangled particles share a direct informational edge regardless of macroscopic geometric separation. The ER=EPR framework is couched in AdS/CFT; we arrive at the same conclusion from the entanglement adjacency structure. Both approaches dissolve the paradox of non-locality by asserting that the entanglement connection is topologically prior to the emergent spatial geometry.
 
 **Causal set theory (Bombelli, Lee, Meyer & Sorkin, 1987).** Causal set theory discretizes spacetime into a partially ordered set of events, with the order relation encoding causal structure [4]. Our fundamental causal interval $\tau_{univ}$ and the discrete execution of state updates share this commitment to fundamentally discrete causality. However, causal sets derive geometry from the order relation alone; we derive it from the entanglement adjacency structure, which carries richer informational content—specifically, the bond dimensions of the tensor network.
 
@@ -193,7 +205,7 @@ This framework intersects with several independent research programs that have a
 
 **Susskind's computational complexity (2014).** Susskind's proposal that the interior volume of a black hole grows with the quantum computational complexity of the boundary state [9] provides a complementary perspective. Where Susskind measures the growth of the wormhole interior, our framework measures the conformance depth that each local state update must propagate through. Both identify a deep connection between gravity and the structure of quantum information.
 
-### 9. Experimental Predictions and Falsifiability
+### 10. Experimental Predictions and Falsifiability
 A framework that claims to replace geometric spacetime must generate predictions distinguishable from General Relativity. We identify three classes of observable consequence, ranging from near-term to aspirational.
 
 **Prediction 1: Entanglement-dependent self-dilation.** In GR, the stress-energy tensor sources curvature and depends on mass-energy content alone, not on the quantum coherence structure of the source. In this framework, $\Omega$ is sourced by entanglement density $\rho_e$, which depends on the internal quantum correlations of a system—not merely its rest mass. A system's own entanglement contributes to its local overlap field, modifying the rate at which its internal processes evolve.
@@ -216,23 +228,23 @@ The strong-field deviation is quantifiable. Although the weak-field matching set
 
 $$\sqrt{1 - \frac{2}{3}} \approx 0.577 \quad \text{vs.} \quad \frac{1}{1 + \frac{1}{3}} = 0.750$$
 
-a $\sim 30\%$ deviation in the static time dilation component. Two caveats bear on this figure. First, the Poisson equation is the minimal ansatz for $\Omega$ (Section 2); nonlinear corrections from the microscopic entanglement dynamics could modify the strong-field form of $\phi(r)$ and bring it closer to — or further from — the Schwarzschild prediction. Second, the photon sphere involves matter moving at $v = R_c$, where velocity-dependent dilation (Section 3) contributes maximally. A full strong-field prediction requires combining the gravitational and velocity-dependent overlap in a self-consistent effective potential, which remains open.
+a $\sim 30\%$ deviation in the static time dilation component. Two caveats bear on this figure. First, the Poisson equation is the minimal ansatz for $\Omega$ (Section 2); nonlinear corrections from the microscopic entanglement dynamics could modify the strong-field form of $\phi(r)$ and bring it closer to — or further from — the Schwarzschild prediction. Second, the photon sphere involves matter moving at $v = R_c$, where velocity-dependent dilation (Section 4) contributes maximally. A full strong-field prediction requires combining the gravitational and velocity-dependent overlap in a self-consistent effective potential, which remains open.
 
 Quasi-normal mode frequencies, determined by this effective potential near the photon sphere, would reflect any residual deviation. LIGO/Virgo/KAGRA currently constrain deviations from Kerr ringdown at the $\sim 10$–$20\%$ level [11]. The Event Horizon Telescope's shadow observations [12] provide a complementary geometric constraint. A precise QNM calculation requires extending the framework to a full metric structure (including spatial components and the combined dilation), which is a priority for future work.
 
 **Prediction 3: Discrete time noise floor.** If time is fundamentally discrete with fundamental interval $\tau_{univ}$, the most precise clocks should encounter an irreducible noise floor uncorrelated between independent clocks, with a white spectrum up to frequency $\nu_{max} = 1/\tau_{univ}$ and a hard cutoff above. If $\tau_{univ} \sim t_P \approx 5.4 \times 10^{-44}$ s, the effect lies far below current sensitivity. However, this framework does not mandate $\tau_{univ} = t_P$; the causal interval is a free parameter that experiment can constrain from above. Cross-correlation analysis of geographically separated optical lattice clocks could place progressively tighter upper bounds on $\tau_{univ}$, testing the discrete-time hypothesis without requiring Planck-scale resolution.
 
-### 10. Limitations and Open Questions
+### 11. Limitations and Open Questions
 
 **Entanglement radii.** The framework invokes entanglement radii as the mechanism generating spatial overlap, but does not specify what determines their scale. A particle's entanglement radius should be a function of its mass-energy and its existing entanglement structure — heavier particles source larger overlap radii, and a system's entanglement history modifies its effective reach into the network. Deriving the functional dependence $r_{ent}(M, S_E, ...)$ from the microscopic dynamics of the tensor network would constrain $\kappa$ and potentially the form of the field equation itself. This is among the most important open problems for the framework.
 
-**Frame dragging.** A rotating massive body should impart angular structure to the overlap field, producing the frame-dragging effects observed by Gravity Probe B and encoded in the Kerr metric's off-diagonal components. The scalar overlap field $\Omega(x)$ as currently defined cannot capture this — an extension to a vector or tensor overlap field, or a flow structure on the entanglement network, is required. The degrees-of-freedom mechanism (Section 5) suggests a natural path: a subsystem sharing degrees of freedom with a rotating mass should inherit not only its radial reference frame but also its angular momentum, producing Lense-Thirring precession. Developing this extension is a priority for reaching full GR correspondence.
+**Frame dragging.** A rotating massive body should impart angular structure to the overlap field, producing the frame-dragging effects observed by Gravity Probe B and encoded in the Kerr metric's off-diagonal components. The scalar overlap field $\Omega(x)$ as currently defined cannot capture this — an extension to a vector or tensor overlap field, or a flow structure on the entanglement network, is required. The degrees-of-freedom mechanism (Section 6) suggests a natural path: a subsystem sharing degrees of freedom with a rotating mass should inherit not only its radial reference frame but also its angular momentum, producing Lense-Thirring precession. Developing this extension is a priority for reaching full GR correspondence.
 
 **Dark energy.** This framework is built on interactions — entanglement overlap, conformance cycling, shared degrees of freedom. A phenomenon that does not interact with local structure, or interacts uniformly with everything, falls outside its current explanatory scope. Dark energy, which drives cosmological expansion without coupling to local systems in any detected way, cannot be addressed until its interaction properties are understood. If dark energy proves to be a property of the vacuum entanglement network — for instance, a cosmological evolution of $\Omega_0$ — the framework may accommodate it, but this remains speculative.
 
-**The coupling constant $\alpha$.** The macroscopic force law $\mathbf{F}_g = -\alpha\nabla\phi$ requires $\alpha$ to be proportional to the test mass to recover the equivalence principle ($\mathbf{F}_g \propto m$). In the degrees-of-freedom picture this is natural: a more massive test subsystem shares more degrees of freedom with the local network, and thus a larger proportion of its state is defined through the dominant mass. But the precise dependence — and whether the proportionality is exact or approximate for quantum-coherent matter — needs to be derived from the microscopic theory. The BEC free-fall experiment (Section 9, Prediction 1) directly tests this question.
+**The coupling constant $\alpha$.** The macroscopic force law $\mathbf{F}_g = -\alpha\nabla\phi$ requires $\alpha$ to be proportional to the test mass to recover the equivalence principle ($\mathbf{F}_g \propto m$). In the degrees-of-freedom picture this is natural: a more massive test subsystem shares more degrees of freedom with the local network, and thus a larger proportion of its state is defined through the dominant mass. But the precise dependence — and whether the proportionality is exact or approximate for quantum-coherent matter — needs to be derived from the microscopic theory. The BEC free-fall experiment (Section 10, Prediction 1) directly tests this question.
 
-**Full General Relativity.** The framework currently recovers Newtonian gravity, weak-field Schwarzschild time dilation, and special-relativistic time dilation, but not the full Einstein field equations. The strong-field regime shows structural differences (Section 3), and the spatial components of the metric have not been derived. Recovering frame dragging, gravitational waves (potentially via the wave equation extension discussed in Section 2), and the correct strong-field behavior around compact objects are necessary milestones. The velocity-dependent dilation derived in Section 3 is encouraging — it unifies gravitational and inertial effects under a single mechanism — but a covariant formulation remains to be developed.
+**Full General Relativity.** The framework currently recovers Newtonian gravity, weak-field Schwarzschild time dilation, and special-relativistic time dilation, but not the full Einstein field equations. The strong-field regime shows structural differences (Section 3), and the spatial components of the metric have not been derived. Recovering frame dragging, gravitational waves (potentially via the wave equation extension discussed in Section 2), and the correct strong-field behavior around compact objects are necessary milestones. The velocity-dependent dilation derived in Section 4 is encouraging — it unifies gravitational and inertial effects under a single mechanism — but a covariant formulation remains to be developed.
 
 ---
 
