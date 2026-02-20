@@ -1,6 +1,6 @@
 # The Informational Mechanics of Spacetime: Gravity and Dilation as Emergent Properties of Entanglement Overlap and Discrete Causality
 
-### Ian Rubenstein, 
+### Ian Rubenstein
 ##### 19 Feb, 2026
 ###### Gemini 3.1, Claude 4.6
 
