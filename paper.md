@@ -1,8 +1,5 @@
 # The Informational Mechanics of Spacetime: Gravity and Dilation as Emergent Properties of Entanglement Overlap and Discrete Causality
 
-Ian Rubenstein, 2026
-Gemini Pro 3.1, Claude 4.6
-
 **Abstract**
 This paper formally redefines spacetime locality, time dilation, and gravitational attraction as emergent phenomena arising from the finite processing rate of quantum mutual information. By abandoning the geometric continuous manifold of General Relativity, we model the universe as a bipartite tensor network where spatial distance is a measure of interaction adjacency, and the speed of light ($c$) is recontextualized as $R_c$: the absolute, discrete interaction rate limit of causality. In this framework, time is the sequential completion of a localized update cycle ("now"). Gravitational time dilation is derived as a computational processing lag caused by the exponential overlap of entanglement radii near dense quantum systems, and gravity is the emergent entropic force driving computationally bound subsystems down the gradient of least informational resistance.
 
@@ -140,17 +137,19 @@ This framework intersects with several independent research programs that have a
 ### 8. Experimental Predictions and Falsifiability
 A framework that claims to replace geometric spacetime must generate predictions distinguishable from General Relativity. We identify three classes of observable consequence, ranging from near-term to aspirational.
 
-**Prediction 1: Entanglement-dependent gravitational coupling.** In GR, the stress-energy tensor sources curvature and depends on mass-energy content alone, not on the quantum coherence structure of the source. In this framework, $\Omega$ is sourced by entanglement density $\rho_e$, which depends on the internal quantum correlations of a system—not merely its rest mass. Two systems of identical rest mass but different entanglement structure should produce detectably different overlap fields.
+**Prediction 1: Entanglement-dependent self-dilation.** In GR, the stress-energy tensor sources curvature and depends on mass-energy content alone, not on the quantum coherence structure of the source. In this framework, $\Omega$ is sourced by entanglement density $\rho_e$, which depends on the internal quantum correlations of a system—not merely its rest mass. A system's own entanglement contributes to its local overlap field, modifying the rate at which its internal processes evolve.
 
-Specifically, consider a Bose-Einstein condensate of $N$ atoms in a state of near-maximal entanglement vs. a thermal gas of equal mass. The entangled system contributes an additional coherence term to the overlap field:
+Consider a Bose-Einstein condensate of $N$ atoms in a state of near-maximal entanglement. The condensate's internal entanglement raises its local computational workload:
 
-$$\Omega_{BEC}(r) = \Omega_0 + \frac{\kappa M}{r} + \frac{\kappa_E S_E}{r}$$
+$$\Omega_{local} = \Omega_{ext} + \frac{\kappa_E S_E}{l_c}$$
 
-where $S_E$ is the entanglement entropy of the condensate and $\kappa_E$ parameterizes the entanglement-specific coupling. GR predicts identical gravitational fields for both systems; this framework predicts a fractional clock rate differential:
+where $\Omega_{ext}$ is the external overlap field (dominated by Earth), $S_E$ is the entanglement entropy of the condensate, $\kappa_E$ parameterizes the entanglement-specific coupling, and $l_c$ is the coherence length of the condensate. A thermal gas of equal mass and species, with $S_E \approx 0$ (no long-range entanglement), experiences only $\Omega_{ext}$. The framework predicts that the entangled system's internal clock rate is reduced relative to the thermal system:
 
-$$\frac{\delta\phi}{\phi} \sim \frac{\kappa_E S_E}{\kappa M}$$
+$$\frac{\delta\phi}{\phi} \sim \frac{\kappa_E S_E}{\Omega_{ext} \, l_c}$$
 
-*Experimental protocol:* Compare the tick rates of two identical optical lattice clocks, one positioned near a macroscopic BEC ($\sim 10^6$ atoms, $S_E \sim N\log 2$) and the other near a decoherent thermal sample of equal mass and temperature. A statistically significant differential beyond the GR prediction would constitute direct evidence for entanglement-sourced gravity. Current optical clock precision ($\Delta f/f \sim 10^{-19}$, [10]) places this at the boundary of detectability, contingent on the magnitude of $\kappa_E / \kappa$.
+*Experimental protocol (spectroscopic):* Compare atomic transition frequencies of atoms within a macroscopic BEC ($\sim 10^6$ atoms, $S_E \sim N\log 2$) against atoms in a decoherent thermal sample of equal mass and species, after subtracting known mean-field and density shifts. The framework predicts a residual redshift of the BEC transitions proportional to $S_E$. Current spectroscopic precision ($\Delta f/f \sim 10^{-19}$, [10]) is sufficient to detect or exclude this effect, contingent on the magnitude of $\kappa_E$.
+
+*Experimental protocol (free fall):* If the coupling constant $\alpha$ in $\mathbf{F}_g = -\alpha\nabla\phi$ depends on a test system's internal entanglement structure, a BEC and a thermal gas of equal mass should fall at measurably different rates—a violation of the weak equivalence principle specific to quantum-coherent matter. Atom interferometry experiments already constrain equivalence principle violations at the $10^{-12}$ level; a differential between coherent and decoherent samples would constitute direct evidence for entanglement-sourced gravity.
 
 **Prediction 2: Absence of a sharp event horizon.** As derived in Section 3, the informational clock rate $\phi(r)$ is strictly positive for all $r > 0$. The framework predicts no event horizon at the Schwarzschild radius—only asymptotic time dilation. For astrophysical black holes, infalling matter never crosses a causal boundary; it accumulates in an ultra-dilated shell.
 
