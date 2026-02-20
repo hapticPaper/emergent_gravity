@@ -34,7 +34,7 @@ $$\nabla^2 \Omega(x) = -4\pi \kappa \rho_e(x)$$
 
 where $\kappa$ is the fundamental informational coupling constant mapping entanglement density to environmental interaction burden. The sign convention ensures that $\Omega$ increases in the vicinity of entanglement-dense regions, consistent with its interpretation as computational workload.
 
-For an isolated system of total entanglement content $M$ localized at the origin ($\rho_e = M\delta^3(\mathbf{x})$), the spherically symmetric solution is:
+For an isolated system of total entanglement content $M$ localized at the origin ( $\rho_e = M\delta^3(\mathbf{x})$ ), the spherically symmetric solution is:
 
 $$\Omega(r) = \Omega_0 + \frac{\kappa M}{r}$$
 
